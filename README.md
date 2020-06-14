@@ -1,5 +1,7 @@
 ![Float](static/images/Float_logo.png)
 
+![Float Screenshot](screenshot-responsive.png)
+
 **[English](README.en.md)**
 
 Float 是一款為 [Zola](https://www.getzola.org/) 設計的佈景主題。

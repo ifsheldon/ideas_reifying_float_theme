@@ -1,5 +1,7 @@
 ![Float](static/images/Float_logo.png)
 
+![Float Screenshot](screenshot-responsive.png)
+
 **[Taiwanese](README.md)**
 
 Float, a theme for [Zola](https://www.getzola.org/).
