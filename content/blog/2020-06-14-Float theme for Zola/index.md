@@ -52,6 +52,11 @@ taxonomies = [
 ]
 ```
 
+複製 float/content/ 的所有子資料夾與檔案到您的 content/：
+
+```shell
+cp -r themes/float/content/* content/
+```
 
 ## 使用 Float
 
