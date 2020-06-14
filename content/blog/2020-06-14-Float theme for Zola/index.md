@@ -9,7 +9,7 @@ feature_image = ""
 feature = true
 +++
 
-[English](/en/blog/float-theme-for-zola/)
+**[English](/en/blog/float-theme-for-zola/)**
 
 Float 是一款為 [Zola](https://www.getzola.org/) 設計的佈景主題。
 
