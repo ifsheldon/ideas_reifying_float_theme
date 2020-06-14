@@ -6,7 +6,7 @@ title = "Float"
 description = "Float theme for Zola"
 
 # The default language; used in feeds.
-default_language = "zh"
+# default_language = "zh"
 
 # The site theme to use.
 # theme = ""
@@ -45,7 +45,7 @@ feed_limit = 20
 #
 taxonomies = [
     {name = "tags", paginate_by = 10},
-    {name = "tags", paginate_by = 10, lang = "en"},
+    # {name = "tags", paginate_by = 10, lang = "en"},
 ]
 
 # The additional languages for the site.
@@ -56,9 +56,9 @@ taxonomies = [
 #       {code = "it"}, # there won't be a feed for Italian content
 #     ]
 #
-languages = [
-    {code= "en", feed = true},
-]
+# languages = [
+#     {code= "en", feed = true},
+# ]
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
