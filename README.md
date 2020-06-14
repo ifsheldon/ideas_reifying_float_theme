@@ -1,6 +1,4 @@
-![Float](static/images/Float_logo.png)
-
-![Float Screenshot](screenshot-responsive.png)
+![Float Screenshot](screenshot.png)
 
 **[English](README.en.md)**
 

@@ -1,6 +1,4 @@
-![Float](static/images/Float_logo.png)
-
-![Float Screenshot](screenshot-responsive.png)
+![Float Screenshot](screenshot.png)
 
 **[Taiwanese](README.md)**
 
