@@ -5,9 +5,11 @@ draft = false
 [taxonomies]
 tags = ["Float", "Zola"]
 [extra]
-feature_image = ""
+feature_image = "Float_logo.png"
 feature = true
 +++
+
+![Float](Float_logo.png)
 
 **[English](/en/blog/float-theme-for-zola/)**
 
@@ -135,3 +137,4 @@ utterances_repo = "username/repository" # 填入欲搭配使用的 GitHub reposi
 ## 已知問題
 
 - 分頁設定皆須設為 10 篇分頁。因為 Zola 的 `get_section()` 無法取得該 section 的分頁設定。
+- 文章卡片主圖不支援 SVG。因為 Zola 的 `resize_image()` 不支援 SVG。

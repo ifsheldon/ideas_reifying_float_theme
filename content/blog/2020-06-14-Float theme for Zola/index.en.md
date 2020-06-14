@@ -5,9 +5,11 @@ draft = false
 [taxonomies]
 tags = ["Float", "Zola"]
 [extra]
-feature_image = ""
+feature_image = "Float_logo.png"
 feature = true
 +++
+
+![Float](Float_logo.png)
 
 **[Taiwanese](/blog/float-theme-for-zola/)**
 
@@ -134,3 +136,4 @@ utterances_repo = "username/repository" # Fill a GitHub repository。
 ## Known issues
 
 - `paginate_by` must be 10. Zola template does not provide `paginate_by` from `get_section()`, so the 10 articles per page is hard coded in template files.
+- Article feature image does not support SVG because Zola `resoze_image()` does not support SVG.
