@@ -451,6 +451,10 @@ hr {
             text-decoration: underline;
         }
 
+        > strong > a {
+            text-decoration: underline;
+        }
+
         > code {
             background-color: hsla(0, 0%, 90%, 1.0);
             padding: 0.2em;
