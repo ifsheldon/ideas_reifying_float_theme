@@ -1,7 +1,7 @@
 name = "Float"
 description = "An elegant blog theme"
 license = "MIT"
-homepage = "https://float.vercel.app/"
+homepage = "https://float-theme.netlify.app/"
 # The minimum version of Zola required
 min_version = "0.11.0"
 
