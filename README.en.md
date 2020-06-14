@@ -35,6 +35,21 @@ Edit your config.toml. Assign `float` to `theme`:
 theme = "float"
 ```
 
+Edit your config.toml. Add `tags` as a taxonomy:
+
+```TOML
+taxonomies = [
+    {name = "tags", paginate_by = 10},
+]
+```
+
+Copy float/content/ all sub folders and files to your conten/:
+
+```shell
+cp -r themes/float/content/* content/
+```
+
+
 ## Using
 
 ### Article and images

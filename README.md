@@ -35,6 +35,20 @@ git clone git@gitlab.com:leon0824/float.git
 theme = "float"
 ```
 
+編輯您的 config.toml，加入 tags 作為分類系統：
+
+```TOML
+taxonomies = [
+    {name = "tags", paginate_by = 10},
+]
+```
+
+複製 float/content/ 的所有子資料夾與檔案到您的 content/：
+
+```shell
+cp -r themes/float/content/* content/
+```
+
 ## 使用 Float
 
 ### 文章與配圖
