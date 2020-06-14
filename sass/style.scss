@@ -81,7 +81,7 @@ hr {
         margin-left: auto;
         margin-right: auto;
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             width: unset;
         }
     }
@@ -99,16 +99,16 @@ hr {
 
 .content-block {
     display: grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 300px auto;
     gap: 1em;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1100px) {
         grid-template-columns: auto;
         align-content: flex-start;
     }
 
     > .content-aside {
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             width: 100vw;
             padding-left: 5vw;
             padding-right: 5vw;
@@ -123,14 +123,34 @@ hr {
         grid-column-start: 1;
         grid-row-start: 2;
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             display: none;
+        }
+    }
+
+    > .float {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        color: hsla(0, 0%, 80%, 1.0);
+        font-size: small;
+
+        @media screen and (max-width: 1100px) {
+            display: none;
+        }
+
+        > .link {
+            color: hsla(0, 0%, 70%, 1.0);
+            font-weight: bold;
+        }
+
+        > .link:hover {
+            color: hsla(0, 0%, 60%, 1.0);
         }
     }
 }
 
 .content-aside {
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1100px) {
         display: grid;
         grid-template-columns: auto 32px;
         align-items: center;
@@ -144,9 +164,8 @@ hr {
 
     > .menuanchor {
         display: none;
-        // background-color: gray;
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             display: unset;
             text-align: center;
         }
@@ -163,13 +182,13 @@ hr {
     }
 
     > #nav-block {
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             display: none;
         }
     }
 
     > .copyright {
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             display: none;
         }
     }
@@ -191,7 +210,7 @@ hr {
     grid-auto-flow: row dense;
     gap: 3em;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1100px) {
         grid-template-columns: 300px 300px;
         margin-left: auto;
         margin-right: auto;
@@ -315,10 +334,8 @@ hr {
 
 .read-more {
     // background-color: hsla(0, 0%, 90%, 1.0);
-    // align-items: center;
 
     > .link > .content > .heading {
-        // font-size: xx-large;
     }
 }
 
@@ -361,7 +378,7 @@ hr {
     > .article-meta {
         font-size: small;
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             width: 90vw;
             margin-left: auto;
             margin-right: auto;
@@ -369,7 +386,7 @@ hr {
     }
 
     > .article-action-block {
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             width: 90vw;
             margin-left: auto;
             margin-right: auto;
@@ -382,7 +399,7 @@ hr {
         font-size: xx-large;
         padding: 0 0 1em 0;
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             width: 90vw;
             margin-left: auto;
             margin-right: auto;
@@ -399,7 +416,7 @@ hr {
     > h2 {
         padding: 1em 0 1em 0;
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             width: 90vw;
             margin-left: auto;
             margin-right: auto;
@@ -413,7 +430,7 @@ hr {
     > h3 {
         padding: 1em 0 1em 0;
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             width: 90vw;
             margin-left: auto;
             margin-right: auto;
@@ -424,7 +441,7 @@ hr {
         line-height: 2em;
         padding : 1em 0 1em 0;
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             width: 90vw;
             margin-left: auto;
             margin-right: auto;
@@ -442,7 +459,7 @@ hr {
     }
 
     > dl {
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             width: calc(90vw - 2em);
             margin-left: auto;
             margin-right: auto;
@@ -462,7 +479,7 @@ hr {
     }
 
     > ul {
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             width: calc(90vw - 2em);
             margin-left: auto;
             margin-right: auto;
@@ -485,7 +502,7 @@ hr {
     }
 
     > ol {
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             width: calc(90vw - 2em);
             margin-left: auto;
             margin-right: auto;
@@ -510,13 +527,13 @@ hr {
     > pre {
         padding: 1em;
         overflow-x: auto;
-        width: calc(90vw - 200px - 1em);
+        width: calc(90vw - 300px - 1em);
         font-size: small;
         box-shadow: 0 10px 30px -10px hsla(221, 16%, 20%, 1.0);
         border-radius: 4px;
         margin-bottom: 1em;
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             width: 100vw;
             padding: 5vw;
             border-radius: 0px;
@@ -528,10 +545,10 @@ hr {
     }
     
     img {
-        width: calc(90vw - 200px - 1em);
+        width: calc(90vw - 300px - 1em);
         border-radius: 4px;
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             width: 100vw;
             margin-left: -5vw;
             border-radius: 0;
@@ -539,11 +556,11 @@ hr {
     }
     
     > iframe {
-        width: calc(90vw - 200px - 1em);
-        height: calc((90vw - 200px - 1em)/2);
+        width: calc(90vw - 300px - 1em);
+        height: calc((90vw - 300px - 1em)/2);
         margin-bottom: 1em;
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             width: 100vw;
             height: 60vw;
         }
@@ -554,7 +571,7 @@ hr {
         width: 90%;
         font-size: small;
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             width: calc(90vw - 2em);
             margin-left: auto;
             margin-right: auto;
