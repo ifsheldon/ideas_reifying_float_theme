@@ -128,7 +128,7 @@ After adding utterances to your GitHub repository, add below snippet to your `[e
 
 ```TOML
 utterances = false
-utterances_repo = "username/repository" # 填入欲搭配使用的 GitHub repository。
+utterances_repo = "username/repository" # Fill a GitHub repository。
 ```
 
 ## Known issues
