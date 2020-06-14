@@ -23,8 +23,12 @@
 <article class="article-block {{ feature_class }}">
     <a href="{{ post.permalink | safe }}"  class="link">
         {% if post.extra.feature_image is matching("[.](jpg|png)$") %}
-        {% set feature_image = post.components[0] ~ "/" ~ post.date ~ "-" ~ post.title ~ "/" ~ post.extra.feature_image %}
-        <img class="image" loading="lazy" alt="{{ post.title }}"
+            {%- if lang == config.default_language %}
+                {% set feature_image = post.components[0] ~ "/" ~ post.date ~ "-" ~ post.title ~ "/" ~ post.extra.feature_image %}
+            {% else %}
+                {% set feature_image = post.components[1] ~ "/" ~ post.date ~ "-" ~ post.title ~ "/" ~ post.extra.feature_image %}
+            {% endif %}
+            <img class="image" loading="lazy" alt="{{ post.title }}"
             srcset="{{ resize_image(path=feature_image, width=300, height=300) | safe }} 300w,
                     {{ resize_image(path=feature_image, width=600, height=600) | safe }} 600w,
                     {{ resize_image(path=feature_image, width=900, height=900) | safe }} 900w,
@@ -34,15 +38,15 @@
                     {{ resize_image(path=feature_image, width=2100, height=2100) | safe }} 2100w,"
             sizes="(max-width: 700px) 90vw, {{ image_width }}">
         {% else %}
-        <img class="image" loading="lazy" alt="{{ post.title }}"
-            srcset="https://source.unsplash.com/300x300/?{{ post.title | slugify }} 300w,
-                    https://source.unsplash.com/600x600/?{{ post.title | slugify}} 600w,
-                    https://source.unsplash.com/900x900/?{{ post.title | slugify}} 900w,
-                    https://source.unsplash.com/1200x1200/?{{ post.title | slugify}} 1200w,
-                    https://source.unsplash.com/1500x1500/?{{ post.title | slugify}} 1500w,
-                    https://source.unsplash.com/1800x1800/?{{ post.title | slugify}} 1800w,
-                    https://source.unsplash.com/2100x2100/?{{ post.title | slugify}} 2100w,"
-            sizes="(max-width: 500px) 90vw, {{ image_width }}">
+            <img class="image" loading="lazy" alt="{{ post.title }}"
+                srcset="https://source.unsplash.com/300x300/?{{ post.title | slugify }} 300w,
+                        https://source.unsplash.com/600x600/?{{ post.title | slugify }} 600w,
+                        https://source.unsplash.com/900x900/?{{ post.title | slugify }} 900w,
+                        https://source.unsplash.com/1200x1200/?{{ post.title | slugify }} 1200w,
+                        https://source.unsplash.com/1500x1500/?{{ post.title | slugify }} 1500w,
+                        https://source.unsplash.com/1800x1800/?{{ post.title | slugify }} 1800w,
+                        https://source.unsplash.com/2100x2100/?{{ post.title | slugify }} 2100w,"
+                sizes="(max-width: 500px) 90vw, {{ image_width }}">
         {% endif %}
         <section class="content">
         <aside class="article-meta">
