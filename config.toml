@@ -5,34 +5,9 @@ base_url = "https://float-theme.netlify.app/"
 title = "Float"
 description = "Float theme for Zola"
 
-# The default language; used in feeds.
-# default_language = "zh"
-
-# The site theme to use.
-# theme = ""
-
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
-
-# When set to "true", a feed is automatically generated.
-generate_feed = true
-
-# The filename to use for the feed. Used as the template filename, too.
-# Defaults to "atom.xml", which has a builtin template that renders an Atom 1.0 feed.
-# There is also a builtin template "rss.xml" that renders an RSS 2.0 feed.
-# feed_filename = "atom.xml"
-# feed_filename = "feed.json"
-
-# The number of articles to include in the feed. All items are included if
-# this limit is not set (the default).
-feed_limit = 20
-
-# When set to "true", files in the `static` directory are hard-linked. Useful for large
-# static files. Note that for this to work, both `static` and the
-# output directory need to be on the same filesystem. Note that the theme's `static`
-# files are always copied, regardles of this setting.
-# hard_link_static = false
 
 # The taxonomies to be rendered for the site and their configuration.
 # Example:
@@ -45,20 +20,7 @@ feed_limit = 20
 #
 taxonomies = [
     {name = "tags", paginate_by = 10},
-    # {name = "tags", paginate_by = 10, lang = "en"},
 ]
-
-# The additional languages for the site.
-# Example:
-#     languages = [
-#       {code = "fr", feed = true}, # there will be a feed for French content
-#       {code = "fr", search = true}, # there will be a Search Index for French content
-#       {code = "it"}, # there won't be a feed for Italian content
-#     ]
-#
-# languages = [
-#     {code= "en", feed = true},
-# ]
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -66,61 +28,5 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
-# A list of glob patterns specifying asset files to ignore when the content
-# directory is processed. Defaults to none, which means that all asset files are
-# copied over to the `public` directory.
-# Example:
-#     ignored_content = ["*.{graphml,xlsx}", "temp.*"]
-ignored_content = []
-
-# A list of directories used to search for additional `.sublime-syntax` files.
-extra_syntaxes = []
-
-# Optional translation object. The key if present should be a language code.
-# Example:
-#     default_language = "fr"
-#
-#     [translations]
-#     [translations.fr]
-#     title = "Un titre"
-#
-#     [translations.en]
-#     title = "A title"
-
-# Configuration of the link checker.
-[link_checker]
-# Skip link checking for external URLs that start with these prefixes
-skip_prefixes = [
-    "http://[2001:db8::]/",
-]
-
-# Skip anchor checking for external URLs that start with these prefixes
-skip_anchor_prefixes = [
-    "https://caniuse.com/",
-]
-
-# Various slugification strategies, see below for details
-# Defauls to everything being a slug
-[slugify]
-paths = "on"
-taxonomies = "on"
-anchors = "on"
-
-# Optional translation object. Keys should be language codes.
-[translations]
-
 [extra]
 # Put all your custom variables here
-google_analytics = false
-google_analytics_id = "UA-286354-4"
-
-google_adsense = false
-google_adsense_id = "ca-pub-8948136958888709"
-
-twitter_account = "@LeonH"
-
-likecoin = false
-likecoin_name = "leon0824"
-
-utterances = false
-utterances_repo = "uniuni-space/exp2.uniuni.space"
