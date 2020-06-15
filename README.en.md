@@ -46,6 +46,12 @@ taxonomies = [
 Copy float/content/ all sub folders and files to your conten/:
 
 ```shell
+cp -r themes/float/static/* static/
+```
+
+Copy float/content/ all sub folders and files to your conten/:
+
+```shell
 cp -r themes/float/content/* content/
 ```
 

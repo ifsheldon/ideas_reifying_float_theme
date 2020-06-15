@@ -43,6 +43,12 @@ taxonomies = [
 ]
 ```
 
+複製 float/static/ 的所有子資料夾與檔案到您的 static/：
+
+```shell
+cp -r themes/float/static/* static/
+```
+
 複製 float/content/ 的所有子資料夾與檔案到您的 content/：
 
 ```shell
