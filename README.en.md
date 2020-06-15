@@ -26,7 +26,7 @@ In your Zola folder:
 
 ```shell
 cd themes
-git clone git@gitlab.com:leon0824/float.git
+git clone git@gitlab.com:float-theme/float.git
 ```
 
 Edit your config.toml. Assign `float` to `theme`:

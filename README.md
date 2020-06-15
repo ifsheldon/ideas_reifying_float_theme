@@ -26,7 +26,7 @@ Float 是一款為 [Zola](https://www.getzola.org/) 設計的佈景主題。
 
 ```shell
 cd themes
-git clone git@gitlab.com:leon0824/float.git
+git clone git@gitlab.com:float-theme/float.git
 ```
 
 編輯您的 config.toml，指定 Float 作為佈景主題：
