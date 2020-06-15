@@ -1,5 +1,7 @@
 ![Float Screenshot](screenshot.png)
 
+![Float Screenshot](screenshot2.png)
+
 **[Taiwanese](README.md)**
 
 Float, a theme for [Zola](https://www.getzola.org/).
