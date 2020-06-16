@@ -90,62 +90,34 @@ feature_image = "pic1.png" # 卡片圖片。
 feature = true # 是否為重點文章，重點文章會以寬版卡片顯示。
 ```
 
+## 客製化
+
+可客製化設定大多可以在 config.toml 的 `[extra]` 區段做設定：
+
+```TOML
+[extra]
+copyright = ""
+
+web_fonts = "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&display=swap'>"
+
+google_analytics = false
+# google_analytics_id = "UA-XXXXXX-X"
+
+google_adsense = false
+# google_adsense_id = "ca-pub-XXXXXXXXXXXXXXXX"
+
+twitter_account = "@xxx"
+
+likecoin = false
+# likecoin_name = "xxx"
+
+utterances = false
+# utterances_repo = "xxx/xxx"
+```
+
 ### 字體
 
 字體的 CSS 位於 float/sass/font.scss，欲更換字體，把 float/sass/font.scss 複製到自己的 sass/font.scss，並修改之。
-
-[Google Fonts](https://fonts.google.com/) 在 float/templates/_macros.html 內的 `font_link()` 區段。欲更換載入字體，把 float/templates/_macros.html 複製到自己的 templates/_macros.html 並修改之。
-
-
-### 版權宣告
-
-版權宣告在 float/templates/_macros.html 內的 `copyright_block()` 區段。欲更換版權宣告，把 float/templates/_macros.html 複製到自己的 templates/_macros.html 並修改之。
-
-### Google Analytics
-
-在您的 config.toml 內的 `[extra]` 寫入下列設定即可自動啟用 Google Analytics：
-
-```TOML
-google_analytics = true
-google_analytics_id = "UA-xxxxxx-x" # 填入 Google Analytics ID
-```
-
-### Google AdSense
-
-在您的 config.toml 內的 `[extra]` 寫入下列設定即可自動啟用 Google AdSense：
-
-```TOML
-google_adsense = true
-google_adsense_id = "ca-pub-XXXXXXXXXXXXXXXX" # 填入 Google AdSense ID
-```
-
-### Twitter Cards
-
-在您的 config.toml 內的 `[extra]` 寫入下列設定即可在網頁內的 Twitter Card 區域埋入您的 Twitter 帳號：
-
-```TOML
-twitter_account = "@xxx" # 填入 Twitter 帳號
-```
-
-### LikeCoin
-
-在您的 config.toml 內的 `[extra]` 寫入下列設定即可自動啟用 LikeCoin：
-
-```TOML
-likecoin = true
-likecoin_name = "xxx" # 填入 LikeCoin 帳號
-```
-
-### utterances
-
-須先在 GitHub 設定 [utterances](https://github.com/apps/utterances)，詳細的步驟請參考 [utterances 網站](https://utteranc.es/)。
-
-在您的 config.toml 內的 `[extra]` 寫入下列設定即可自動啟用 utterances：
-
-```TOML
-utterances = false
-utterances_repo = "username/repository" # 填入欲搭配使用的 GitHub repository。
-```
 
 ## 已知問題
 

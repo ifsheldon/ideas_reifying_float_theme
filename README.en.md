@@ -91,61 +91,34 @@ feature_image = "pic1.png" # Article card image
 feature = true # Wide article card applies to feature article
 ```
 
+## Customization
+
+Add below variables to your `[extra]` of config.toml to customize your blog:
+
+```TOML
+[extra]
+copyright = ""
+
+web_fonts = "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&display=swap'>"
+
+google_analytics = false
+# google_analytics_id = "UA-XXXXXX-X"
+
+google_adsense = false
+# google_adsense_id = "ca-pub-XXXXXXXXXXXXXXXX"
+
+twitter_account = "@xxx"
+
+likecoin = false
+# likecoin_name = "xxx"
+
+utterances = false
+# utterances_repo = "xxx/xxx"
+```
+
 ### Font
 
 Font CSS is at float/sass/font.scss. To change font, copy float/sass/font.scss to your sass/font.scss and edit the file.
-
-[Google Fonts](https://fonts.google.com/) is at `font_link()` of float/templates/_macros.html. to change Google Fonts, copy float/templates/_macros.html to your templates/_macros.html and edit the `font_link()` block.
-
-### Copyright
-
-Copyright is at `copyright_block()` of float/templates/_macros.html. to change copyright, copy float/templates/_macros.html to your templates/_macros.html and edit the `copyright_block()` block.
-
-### Google Analytics
-
-Add below snippet to your `[extra]` of /config.toml to enable Google Analytics:
-
-```TOML
-google_analytics = true
-google_analytics_id = "UA-xxxxxx-x" # Fill Google Analytics ID
-```
-
-### Google AdSense
-
-Add below snippet to your `[extra]` of /config.toml to enable Google AdSense:
-
-```TOML
-google_adsense = true
-google_adsense_id = "ca-pub-XXXXXXXXXXXXXXXX" # Fill Google AdSense ID
-```
-
-### Twitter Cards
-
-Add below snippet to your `[extra]` of /config.toml to embed your Twitter account into Twitter Cards tags:
-
-```TOML
-twitter_account = "@xxx" # Fill Twitter account
-```
-
-### LikeCoin
-
-Add below snippet to your `[extra]` of /config.toml to enable LikeCoin:
-
-```TOML
-likecoin = true
-likecoin_name = "xxx" # 填入 LikeCoin 帳號
-```
-
-### utterances
-
-Before adding a snippet, additional steps must be done. Refers to [utterances](https://utteranc.es/) document to setup your GitHub repository.
-
-After adding utterances to your GitHub repository, add below snippet to your `[extra]` of /config.toml to enable utterances:
-
-```TOML
-utterances = false
-utterances_repo = "username/repository" # Fill a GitHub repository。
-```
 
 ## Known issues
 
