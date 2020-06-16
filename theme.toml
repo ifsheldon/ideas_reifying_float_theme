@@ -12,6 +12,8 @@ min_version = "0.11.0"
 [extra]
 copyright = ""
 
+web_fonts = "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&display=swap'>"
+
 google_analytics = false
 # google_analytics_id = "UA-XXXXXX-X"
 

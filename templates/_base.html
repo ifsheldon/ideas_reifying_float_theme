@@ -16,7 +16,7 @@
   {%- endif %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {{ macros::font_link() }}
+  {{ config.extra.web_fonts | safe }}
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
   {%- if config.generate_feed -%}
     {%- if lang == config.default_language %}
