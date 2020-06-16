@@ -1,6 +1,4 @@
-![Float Screenshot](screenshot.png)
-
-![Float Screenshot](screenshot2.png)
+![Float](content/blog/2020-06-14-Float theme for Zola/Float.png)
 
 **[Taiwanese](README.md)**
 
