@@ -224,6 +224,7 @@ hr {
         grid-template-columns: 300px 300px;
         margin-left: auto;
         margin-right: auto;
+        gap: calc((100vw - 600px) / 3);
     }
 
     @media screen and (max-width: 700px) {
@@ -325,7 +326,7 @@ hr {
 
     &.-feature {
         > .link > .image {
-            width: calc(600px + 3em);
+            width: calc(600px + ((100vw - 600px) / 3));
 
             @media screen and (max-width: 700px) {
                 width: 90vw;
@@ -333,7 +334,7 @@ hr {
         }
 
         > .link > .content {
-            width: calc(600px + 3em);
+            width: calc(600px + ((100vw - 600px) / 3));
 
             @media screen and (max-width: 700px) {
                 width: 90vw;
