@@ -5,11 +5,11 @@ draft = false
 [taxonomies]
 tags = ["Float", "Zola"]
 [extra]
-feature_image = "Float_logo.png"
+feature_image = "Float.svg"
 feature = true
 +++
 
-![Float](Float_logo.png)
+![Float](Float.svg)
 
 Float 是一款為 [Zola](https://www.getzola.org/) 設計的佈景主題。
 

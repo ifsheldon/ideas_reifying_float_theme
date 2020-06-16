@@ -94,7 +94,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.5390625"
-     inkscape:cx="909.47604"
+     inkscape:cx="544.9543"
      inkscape:cy="596.35451"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -113,7 +113,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -122,45 +122,34 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-170)">
-    <circle
-       style="fill:#ffffff;stroke:#404040;stroke-width:0.79099226;stroke-miterlimit:4;stroke-dasharray:none"
-       id="path23"
-       cx="63.5"
-       cy="233.5"
-       r="63.104504" />
+    <rect
+       style="fill:#ffcc00;stroke:none;stroke-width:1.16425264;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect893"
+       width="127.02646"
+       height="127.02646"
+       x="-0.01322937"
+       y="169.98677" />
     <text
-       id="text2015"
-       y="251.62996"
-       x="62.522804"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Noto Sans CJK TC';-inkscape-font-specification:'Noto Sans CJK TC';letter-spacing:0px;word-spacing:0px;fill:#404040;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="62.644955"
+       y="249.36371"
+       id="text897"><tspan
+         sodipodi:role="line"
+         id="tspan895"
+         x="61.322037"
+         y="249.36371"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.51111221px;font-family:'Noto Serif CJK TC';-inkscape-font-specification:'Noto Serif CJK TC Bold';text-align:center;letter-spacing:-2.64583325px;text-anchor:middle;fill:#404040;stroke-width:0.26458332">Float</tspan></text>
+    <text
+       id="text839"
+       y="136.28696"
+       x="170.50348"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Noto Sans CJK TC';-inkscape-font-specification:'Noto Sans CJK TC';letter-spacing:0px;word-spacing:0px;fill:#404040;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:45.15555573px;font-family:'Noto Serif CJK TC';-inkscape-font-specification:'Noto Serif CJK TC Bold';text-align:center;letter-spacing:-2.64583325px;text-anchor:middle;fill:#404040;stroke-width:0.26458332"
-         y="251.62996"
-         x="61.199886"
-         id="tspan2013"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.51111111px;font-family:'Noto Serif CJK TC';-inkscape-font-specification:'Noto Serif CJK TC Bold';text-align:center;letter-spacing:-2.64583325px;text-anchor:middle;fill:#404040;stroke-width:0.26458332"
+         y="136.28696"
+         x="169.18056"
+         id="tspan837"
          sodipodi:role="line">Float</tspan></text>
-    <g
-       id="g918"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96">
-      <rect
-         y="110.65424"
-         x="251.79131"
-         height="132.29167"
-         width="132.29167"
-         id="rect893"
-         style="fill:#ffcc00;stroke:none;stroke-width:1.21251059;stroke-miterlimit:4;stroke-dasharray:none" />
-      <text
-         id="text897"
-         y="194.93004"
-         x="316.95996"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Noto Sans CJK TC';-inkscape-font-specification:'Noto Sans CJK TC';letter-spacing:0px;word-spacing:0px;fill:#404040;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:45.15555573px;font-family:'Noto Serif CJK TC';-inkscape-font-specification:'Noto Serif CJK TC Bold';text-align:center;letter-spacing:-2.64583325px;text-anchor:middle;fill:#404040;stroke-width:0.26458332"
-           y="194.93004"
-           x="315.63705"
-           id="tspan895"
-           sodipodi:role="line">Float</tspan></text>
-    </g>
   </g>
 </svg>
