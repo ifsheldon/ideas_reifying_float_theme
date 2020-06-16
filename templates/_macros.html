@@ -28,6 +28,8 @@
                     {{ resize_image(path=feature_image, width=1800, height=1800) | safe }} 1800w,
                     {{ resize_image(path=feature_image, width=2100, height=2100) | safe }} 2100w,"
             sizes="(max-width: 700px) 90vw, {{ image_width }}">
+        {% elif post.extra.feature_image is matching("[.](svg)$") %}
+            <img class="image" loading="lazy" alt="{{ post.title }}" src="{{ post.permalink | safe }}{{ post.extra.feature_image }}">
         {% else %}
             <img class="image" loading="lazy" alt="{{ post.title }}"
                 srcset="https://source.unsplash.com/300x300/?{{ post.title | slugify }} 300w,

@@ -122,4 +122,3 @@ utterances = false
 ## 已知問題
 
 - 分頁設定皆須設為 10 篇分頁。因為 Zola 的 `get_section()` 無法取得該 section 的分頁設定。
-- 文章卡片主圖不支援 SVG。因為 Zola 的 `resize_image()` 不支援 SVG。

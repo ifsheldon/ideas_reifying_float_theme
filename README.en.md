@@ -123,4 +123,3 @@ Font CSS is at float/sass/font.scss. To change font, copy float/sass/font.scss t
 ## Known issues
 
 - `paginate_by` must be 10. Zola template does not provide `paginate_by` from `get_section()`, so the 10 articles per page is hard coded in template files.
-- Article feature image does not support SVG because Zola `resoze_image()` does not support SVG.
