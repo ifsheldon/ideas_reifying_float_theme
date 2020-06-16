@@ -64,15 +64,10 @@
           {% endfor %}
         </ul>
       </nav>
-      <section class="copyright">
-        {{ macros::copyright_block() }}
-      </section>
     </aside>
     {% block content %}{% endblock content %}
-    <div class="spacer">
-    </div>
     <div class="copyright">
-      {{ macros::copyright_block() }}
+      {{ config.extra.copyright | safe }}
     </div>
     <div class="float">
       Theme by <a class="link" href="https://float-theme.netlify.app/">Float</a>

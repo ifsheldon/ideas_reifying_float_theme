@@ -26,7 +26,7 @@ p {
 }
 
 ul {
-    margin: 2em;
+    margin: 2em 0 2em 2em;
 }
 
 ol {
@@ -119,34 +119,25 @@ hr {
         }
     }
 
-    > .spacer {
-        grid-column-start: 1;
-        grid-row-start: 2;
-
-        @media screen and (max-width: 1100px) {
-            display: none;
-        }
-    }
-
     > .copyright {
-        display: none;
+        grid-column-start: 1;
+        font-size: small;
+        margin-top: 1em;
+        padding-top: 1em;
 
         @media screen and (max-width: 1100px) {
             grid-row-start: unset;
-            display: unset;
             text-align: center;
             margin-top: 1em;
             padding-top: 1em;
+            margin-left: unset;
         }
     }
 
     > .float {
         grid-column-start: 1;
-        grid-row-start: 3;
         color: hsla(0, 0%, 80%, 1.0);
         font-size: small;
-        margin-top: 1em;
-        padding-top: 1em;
         margin-bottom: 1em;
         padding-bottom: 1em;
 

@@ -10,19 +10,21 @@ min_version = "0.11.0"
 # be merged with user data, some kind of prefix or nesting is preferable
 # Use snake_casing to be consistent with the rest of Zola
 [extra]
+copyright = ""
+
 google_analytics = false
-# google_analytics_id = "UA-286354-4"
+# google_analytics_id = "UA-XXXXXX-X"
 
 google_adsense = false
-# google_adsense_id = "ca-pub-8948136958888709"
+# google_adsense_id = "ca-pub-XXXXXXXXXXXXXXXX"
 
-twitter_account = "@LeonH"
+twitter_account = "@xxx"
 
 likecoin = false
-# likecoin_name = "leon0824"
+# likecoin_name = "xxx"
 
 utterances = false
-# utterances_repo = "uniuni-space/exp2.uniuni.space"
+# utterances_repo = "xxx/xxx"
 
 # The theme author info: you!
 [author]
