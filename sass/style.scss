@@ -101,6 +101,7 @@ hr {
     display: grid;
     grid-template-columns: 300px auto;
     gap: 1em;
+    grid-auto-flow: row dense;
 
     @media screen and (max-width: 1100px) {
         grid-template-columns: auto;
