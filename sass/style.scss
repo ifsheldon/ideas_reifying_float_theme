@@ -95,14 +95,6 @@ hr {
             grid-row-start: unset;
         }
     }
-
-    .google-auto-placed {
-        grid-column-start: 2;
-
-        @media screen and (max-width: 700px) {
-            grid-column-start: unset;
-        }
-    }
 }
 
 .content-block {
@@ -166,6 +158,14 @@ hr {
 
         > .link:hover {
             color: hsla(0, 0%, 60%, 1.0);
+        }
+    }
+
+    .google-auto-placed {
+        grid-column-start: 2;
+
+        @media screen and (max-width: 700px) {
+            grid-column-start: unset;
         }
     }
 }
