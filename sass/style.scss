@@ -270,6 +270,16 @@ hr {
             margin-right: auto;
         }
     }
+
+    .google-auto-placed {
+        grid-column-start: 1;
+        grid-column-end: -1;
+
+        @media screen and (max-width: 700px) {
+            grid-column-start: unset;
+            grid-column-end: unset;
+        }
+    }
 }
 
 .article-block {
