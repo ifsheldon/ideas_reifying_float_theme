@@ -73,26 +73,28 @@ hr {
 }
 
 .body-block {
-    margin: 2em auto 1em auto;
+    margin: 2em auto 0 auto;
     color: hsla(0, 0%, 10%, 1.0);
 
     > .content-block {
         width: 90vw;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 1em;
+        min-height: calc(100vh - 70px - 2em);
 
         @media screen and (max-width: 1100px) {
             width: unset;
+            min-height: calc(100vh - 100px - 2em);
         }
     }
 
-    > .article-list {
-        grid-column-start: 2;
-        grid-row-start: 1;
+    > .footer-container {
+        margin-top: 1em;
+        min-height: 70px;
 
-        @media screen and (max-width: 700px) {
-            grid-column-start: 1;
-            grid-row-start: unset;
+        @media screen and (max-width: 1100px) {
+            min-height: 100px;
         }
     }
 }
@@ -102,6 +104,7 @@ hr {
     grid-template-columns: 300px auto;
     gap: 1em;
     grid-auto-flow: row dense;
+    padding-bottom: 1em;
 
     @media screen and (max-width: 1100px) {
         grid-template-columns: auto;
@@ -110,13 +113,8 @@ hr {
 
     > .content-aside {
         @media screen and (max-width: 1100px) {
-            width: 100vw;
-            padding-left: calc((100vw - 600px) / 3);
-            padding-right: calc((100vw - 600px) / 3);
             position: sticky;
             top: 0;
-            background-color: hsla(0, 0%, 100%, 0.9);
-            backdrop-filter: blur(1px);
         }
 
         @media screen and (max-width: 700px) {
@@ -125,40 +123,13 @@ hr {
         }
     }
 
-    > .copyright {
-        grid-column-start: 1;
-        font-size: small;
-        margin-top: 1em;
-        padding-top: 1em;
+    > .article-list {
+        grid-column-start: 2;
+        grid-row-start: 1;
 
         @media screen and (max-width: 1100px) {
+            grid-column-start: unset;
             grid-row-start: unset;
-            text-align: center;
-            margin-top: 1em;
-            padding-top: 1em;
-            margin-left: unset;
-        }
-    }
-
-    > .float {
-        grid-column-start: 1;
-        color: hsla(0, 0%, 80%, 1.0);
-        font-size: small;
-        margin-bottom: 1em;
-        padding-bottom: 1em;
-
-        @media screen and (max-width: 1100px) {
-            grid-row-start: unset;
-            text-align: center;
-        }
-
-        > .link {
-            color: hsla(0, 0%, 70%, 1.0);
-            font-weight: bold;
-        }
-
-        > .link:hover {
-            color: hsla(0, 0%, 60%, 1.0);
         }
     }
 
@@ -176,6 +147,11 @@ hr {
         display: grid;
         grid-template-columns: auto 32px;
         align-items: center;
+        width: 100vw;
+        padding-left: calc((100vw - 600px) / 3);
+        padding-right: calc((100vw - 600px) / 3);
+        background-color: hsla(0, 0%, 100%, 0.9);
+        backdrop-filter: blur(1px);
     }
 
     > .title {
@@ -208,12 +184,6 @@ hr {
             display: none;
         }
     }
-
-    > .copyright {
-        @media screen and (max-width: 1100px) {
-            display: none;
-        }
-    }
 }
 
 #nav-block {
@@ -234,7 +204,6 @@ hr {
     margin-bottom: 1em;
     padding-bottom: 1em;
     justify-content: center;
-
 
     @media screen and (max-width: 1100px) {
         grid-template-columns: 300px 300px;
@@ -650,5 +619,51 @@ hr {
 
     > a > .button:hover {
         background-color: hsla(0, 0%, 50%, 1.0);
+    }
+}
+
+.footer-container {
+    background-color: hsla(0, 0%, 90%, 1.0);
+    padding: 1em 5vw 1em 5vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    font-size: small;
+    align-items: end;
+    gap: 1em;
+
+    @media screen and (max-width: 1100px) {
+        grid-template-columns: auto;
+        justify-content: unset;
+    }
+
+    > .copyright {
+        @media screen and (max-width: 1100px) {
+            grid-row-start: unset;
+            text-align: center;
+            margin-left: unset;
+        }
+    }
+
+    > .float {
+        color: hsla(0, 0%, 60%, 1.0);
+
+        @media screen and (max-width: 1100px) {
+            grid-row-start: unset;
+            text-align: center;
+        }
+
+        > span {
+            > .link {
+                color: hsla(0, 0%, 50%, 1.0);
+                font-weight: bold;
+            }
+    
+            > .link:hover {
+                color: hsla(0, 0%, 40%, 1.0);
+            }
+        }
+
+        
     }
 }

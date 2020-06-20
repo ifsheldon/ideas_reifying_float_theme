@@ -66,13 +66,16 @@
       </nav>
     </aside>
     {% block content %}{% endblock content %}
+  </main>
+
+  <footer class="footer-container">
     <div class="copyright">
       {{ config.extra.copyright | safe }}
     </div>
     <div class="float">
-      Theme by <a class="link" href="https://float-theme.netlify.app/">Float</a>
+      <span>Theme by <a class="link" href="https://float-theme.netlify.app/">Float</a></span>
     </div>
-  </main>
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/8.5.10/mmenu.min.js"></script>
   <script>
