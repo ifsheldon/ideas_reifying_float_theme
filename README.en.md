@@ -24,9 +24,9 @@ Float, a theme for [Zola](https://www.getzola.org/).
 
 In your Zola folder:
 
+Add Float as a Git submodule:
 ```shell
-cd themes
-git clone git@gitlab.com:float-theme/float.git
+git submodule add https://gitlab.com/float-theme/float.git theme/float
 ```
 
 Edit your config.toml. Assign `float` to `theme`:
