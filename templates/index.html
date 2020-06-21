@@ -19,10 +19,11 @@
 
 {% block content %}
   <main class="article-list">
+    {% set main_section = config.extra.main_section %}
     {%- if lang == config.default_language %}
-      {% set section = get_section(path="blog/_index.md") %}
+      {% set section = get_section(path=main_section ~ "/_index.md") %}
     {%- else %}
-      {% set path = "blog/_index." ~ lang ~ ".md" %}
+      {% set path = main_section ~ "/_index." ~ lang ~ ".md" %}
       {% set section = get_section(path=path) %}
     {% endif %}
     {% for post in section.pages | slice(end=10) %}
@@ -53,7 +54,16 @@
       </article>
     {% endif %}
   </main>
-  {# <pre style="font-size: xx-small; height: 50vh; overflow: auto; padding-top: 1em; padding-bottom: 1em; margin-top: 1em; margin-bottom: 1em">
+  {# <pre style="font-size: xx-small; 
+              height: 50vh; 
+              overflow: auto; 
+              padding-top: 1em; 
+              padding-bottom: 1em; 
+              margin-top: 1em; 
+              margin-bottom: 1em;
+              grid-column-start: 1;
+              grid-column-end: -1;
+              background-color: hsla(0, 0%, 90%, 1.0);">
     <code>
       {{ __tera_context | escape }}
     </code>
