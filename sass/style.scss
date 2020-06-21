@@ -471,6 +471,12 @@ hr {
         }
     }
 
+    > blockquote {
+        border-left: 2px solid hsla(0, 0%, 10%, 1.0);
+        margin-left: 1em;
+        padding-left: 1em;
+    }
+
     > dl {
         @media screen and (max-width: 1100px) {
             width: calc(90vw - 2em);
