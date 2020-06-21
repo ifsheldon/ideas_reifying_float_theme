@@ -65,11 +65,12 @@ Article and images are co-located in the same folder:
 ```
 content/
 └── blog/
-     └── 2020-06-21-Float theme for Zola/
-          ├── index.md
-          ├── pic1.png
-          ├── pic2.png
-          └── qa_report.pdf
+    └── 2020/
+        └── 2020-06-21-Float theme for Zola/
+            ├── index.md
+            ├── pic1.png
+            ├── pic2.png
+            └── qa_report.pdf
 ```
 
 Article content and front-matter are in index.md. Images are in the same folder.
@@ -95,6 +96,8 @@ Add below variables to your `[extra]` of config.toml to customize your blog:
 
 ```TOML
 [extra]
+main_section = "blog"
+
 copyright = ""
 
 web_fonts = "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&display=swap'>"

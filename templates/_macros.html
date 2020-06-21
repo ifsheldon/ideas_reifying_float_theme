@@ -15,9 +15,9 @@
     <a href="{{ post.permalink | safe }}"  class="link">
         {% if post.extra.feature_image is matching("[.](jpg|png)$") %}
             {%- if lang == config.default_language %}
-                {% set feature_image = post.components[0] ~ "/" ~ post.date ~ "-" ~ post.title ~ "/" ~ post.extra.feature_image %}
+                {% set feature_image = post.components[0] ~ "/" ~ post.year ~ "/" ~ post.date ~ "-" ~ post.title ~ "/" ~ post.extra.feature_image %}
             {% else %}
-                {% set feature_image = post.components[1] ~ "/" ~ post.date ~ "-" ~ post.title ~ "/" ~ post.extra.feature_image %}
+                {% set feature_image = post.components[1] ~ "/" ~ post.year ~ "/" ~ post.date ~ "-" ~ post.title ~ "/" ~ post.extra.feature_image %}
             {% endif %}
             <img class="image" loading="lazy" alt="{{ post.title }}"
             srcset="{{ resize_image(path=feature_image, width=300, height=300) | safe }} 300w,
