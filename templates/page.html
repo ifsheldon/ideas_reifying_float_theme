@@ -29,18 +29,19 @@
 {% endblock head %}
 
 {% block page_heading %}
-<h1 class="title">
   {%- if lang == config.default_language %}
-    <a href="/">{{ config.title }}</a><span class="heading"> /{{ page.components[0] }}</span>
+    {% set section_title = page.components[0] %}
   {%- else %}
-    <a href="/">{{ config.title }}</a><span class="heading"> /{{ page.components[1] }}</span>
+    {% set section_title = page.components[1] %}
   {%- endif -%}
-</h1>
+  <h1 class="title">
+    <a href="/">{{ config.title }}</a><span class="heading"> /{{ section_title | title }}</span>
+  </h1>
 {% endblock page_heading %}
 
 
 {% block content %}
-  <pre style="font-size: xx-small; 
+  {# <pre style="font-size: xx-small; 
               height: 50vh; 
               overflow: auto; 
               padding-top: 1em; 
@@ -53,7 +54,8 @@
     <code>
       {{ __tera_context | escape }}
     </code>
-  </pre>
+  </pre> #}
+
   <article class="content-article">
     <aside class="article-meta">
       <time>{{ page.date }}</time>
