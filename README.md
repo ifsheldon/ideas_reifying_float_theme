@@ -87,6 +87,7 @@ tags = ["Float", "Zola"]
 [extra]
 feature_image = "pic1.png" # 卡片圖片。
 feature = true # 是否為重點文章，重點文章會以寬版卡片顯示。
+link = "" # 指定卡片連結，若有指定則卡片不會連結到文章頁。
 ```
 
 ## 客製化

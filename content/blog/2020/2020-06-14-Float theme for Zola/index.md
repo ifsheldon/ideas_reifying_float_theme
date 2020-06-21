@@ -7,6 +7,7 @@ tags = ["Float", "Zola"]
 [extra]
 feature_image = "Float.svg"
 feature = true
+link = ""
 +++
 
 ![Float](Float.png)

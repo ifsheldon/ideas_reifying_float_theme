@@ -88,6 +88,7 @@ tags = ["Float", "Zola"]
 [extra]
 feature_image = "pic1.png" # Article card image
 feature = true # Wide article card applies to feature article
+link = "" # Assign another link to the card to insteak linking to the post page
 ```
 
 ## Customization

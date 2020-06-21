@@ -12,7 +12,12 @@
   {% set image_width = "300px" %}
 {% endif %}
 <article class="article-block {{ feature_class }}">
-    <a href="{{ post.permalink | safe }}"  class="link">
+    {%- if post.extra.link %}
+        {% set link = post.extra.link %}
+    {% else %}
+        {% set link = post.permalink %}
+    {% endif %}
+    <a href="{{ link | safe }}"  class="link">
         {% if post.extra.feature_image is matching("[.](jpg|png)$") %}
             {%- if lang == config.default_language %}
                 {% set feature_image = post.components[0] ~ "/" ~ post.year ~ "/" ~ post.date ~ "-" ~ post.title ~ "/" ~ post.extra.feature_image %}
