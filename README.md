@@ -1,4 +1,4 @@
-![Float](content/blog/2020-06-14-Float theme for Zola/Float.png)
+![Float](content/blog/2020/2020-06-14-Float theme for Zola/Float.png)
 
 **[English](README.en.md)**
 
