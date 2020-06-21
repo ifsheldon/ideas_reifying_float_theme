@@ -71,11 +71,12 @@ cp -r themes/float/content/* content/
 ```
 content/
 └── blog/
-     └── 2020-06-21-Float theme for Zola/
-          ├── index.md
-          ├── pic1.png
-          ├── pic2.png
-          └── qa_report.pdf
+    └── 2020/
+        └── 2020-06-21-Float theme for Zola/
+            ├── index.md
+            ├── pic1.png
+            ├── pic2.png
+            └── qa_report.pdf
 ```
 
 文章為 index.md，文內的配圖或其它檔案也是放在文章資料夾內。
@@ -101,6 +102,8 @@ feature = true # 是否為重點文章，重點文章會以寬版卡片顯示。
 
 ```TOML
 [extra]
+main_section = "blog"
+
 copyright = ""
 
 web_fonts = "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&display=swap'>"
