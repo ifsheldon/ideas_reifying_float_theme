@@ -337,7 +337,7 @@ hr {
             color: hsla(0, 0%, 30%, 1.0);
 
             @media (prefers-color-scheme: dark) {
-                color: hsla(0, 0%, 100%, 1.0)
+                color: unset;
             }
 
             @media screen and (max-width: 700px) {
