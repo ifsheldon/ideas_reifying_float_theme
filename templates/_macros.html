@@ -18,7 +18,7 @@
         {% set link = post.permalink %}
     {% endif %}
     <a href="{{ link | safe }}"  class="link">
-        {% if post.extra.feature_image is matching("[.](jpg|jpeg|png)$") %}
+        {% if post.extra.feature_image is matching("[.](jpg|jpeg|png|gif)$") %}
             {%- if lang == config.default_language %}
                 {% set feature_image = post.components[0] ~ "/" ~ post.year ~ "/" ~ post.date ~ "-" ~ post.title ~ "/" ~ post.extra.feature_image %}
             {% else %}
