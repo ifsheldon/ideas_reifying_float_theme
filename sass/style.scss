@@ -303,6 +303,7 @@ hr {
 
         @media (prefers-color-scheme: dark) {
             box-shadow: 0 10px 30px -10px hsla(0, 0%, 0%, 1.0);
+            background-color: hsla(0, 0%, 50%, 1.0);
         }
 
         @media screen and (max-width: 700px) {
@@ -664,11 +665,19 @@ hr {
     > table th {
         background-color: hsla(0, 0%, 80%, 1.0);
         padding: 1em;
+
+        @media (prefers-color-scheme: dark) {
+            background-color: hsla(0, 0%, 10%, 1.0);
+        }
     }
 
     > table td {
         background-color: hsla(0, 0%, 90%, 1.0);
         padding: 1em;
+
+        @media (prefers-color-scheme: dark) {
+            background-color: hsla(0, 0%, 20%, 1.0);
+        }
     }
 
     > .google-auto-placed {
