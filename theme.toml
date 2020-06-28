@@ -22,6 +22,7 @@ google_analytics = false
 google_adsense = false
 # google_adsense_id = "ca-pub-XXXXXXXXXXXXXXXX"
 
+display_twitter_link = false
 twitter_account = "@xxx"
 
 likecoin = false

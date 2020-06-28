@@ -57,7 +57,7 @@
         </a>
       </div>
       <section class="social-links">
-        {%- if config.extra.twitter_account -%}
+        {%- if config.extra.display_twitter_link and config.extra.twitter_account -%}
           <a href="https://twitter.com/{{ config.extra.twitter_account }}"><img class="button" src="https://static.addtoany.com/buttons/twitter.svg"></a>
         {% endif %}
       </section>
@@ -75,7 +75,7 @@
 
   <footer class="footer-container">
     <section class="social-links">
-      {%- if config.extra.twitter_account -%}
+      {%- if config.extra.display_twitter_link and config.extra.twitter_account -%}
         <a href="https://twitter.com/{{ config.extra.twitter_account }}"><img class="button" src="https://static.addtoany.com/buttons/twitter.svg"></a>
       {% endif %}
     </section>
