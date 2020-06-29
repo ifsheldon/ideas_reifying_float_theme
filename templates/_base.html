@@ -58,17 +58,17 @@
       </div>
       <section class="social-links">
         {%- if config.extra.display_twitter_link and config.extra.twitter_url -%}
-          <a href="{{ config.extra.twitter_url }}"><img class="button" src="https://static.addtoany.com/buttons/twitter.svg"></a>
+          <a href="{{ config.extra.twitter_url | safe }}"><img class="button" src="https://static.addtoany.com/buttons/twitter.svg"></a>
         {% endif %}
         {%- if config.extra.display_facebook_link and config.extra.facebook_url -%}
-          <a href="{{ config.extra.facebook_url }}"><img class="button" src="https://static.addtoany.com/buttons/facebook.svg"></a>
+          <a href="{{ config.extra.facebook_url | safe }}"><img class="button" src="https://static.addtoany.com/buttons/facebook.svg"></a>
         {% endif %}
       </section>
       <nav id="nav-block">
         <ul id="tag-list">
           {% set tags = get_taxonomy(kind="tags", lang=lang) %}
           {% for term in tags.items %}
-          <li><a href="{{ term.permalink | safe }}">{{ term.name }}</a></li>
+            <li class="item"><a href="{{ term.permalink | safe }}">{{ term.name }}</a></li>
           {% endfor %}
         </ul>
       </nav>
@@ -79,10 +79,10 @@
   <footer class="footer-container">
     <section class="social-links">
       {%- if config.extra.display_twitter_link and config.extra.twitter_url -%}
-        <a href="{{ config.extra.twitter_url }}"><img class="button" src="https://static.addtoany.com/buttons/twitter.svg"></a>
+        <a href="{{ config.extra.twitter_url | safe }}"><img class="button" src="https://static.addtoany.com/buttons/twitter.svg"></a>
       {% endif %}
       {%- if config.extra.display_facebook_link and config.extra.facebook_url -%}
-        <a href="{{ config.extra.facebook_url }}"><img class="button" src="https://static.addtoany.com/buttons/facebook.svg"></a>
+        <a href="{{ config.extra.facebook_url | safe }}"><img class="button" src="https://static.addtoany.com/buttons/facebook.svg"></a>
       {% endif %}
     </section>
     <div class="copyright">
