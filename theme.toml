@@ -24,6 +24,10 @@ google_adsense = false
 
 display_twitter_link = false
 twitter_account = "@xxx"
+twitter_url = "https://www.twitter.com/"
+
+display_facebook_link = false
+facebook_url = "https://www.facebook.com/"
 
 likecoin = false
 # likecoin_name = "xxx"

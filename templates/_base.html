@@ -57,8 +57,11 @@
         </a>
       </div>
       <section class="social-links">
-        {%- if config.extra.display_twitter_link and config.extra.twitter_account -%}
-          <a href="https://twitter.com/{{ config.extra.twitter_account }}"><img class="button" src="https://static.addtoany.com/buttons/twitter.svg"></a>
+        {%- if config.extra.display_twitter_link and config.extra.twitter_url -%}
+          <a href="{{ config.extra.twitter_url }}"><img class="button" src="https://static.addtoany.com/buttons/twitter.svg"></a>
+        {% endif %}
+        {%- if config.extra.display_facebook_link and config.extra.facebook_url -%}
+          <a href="{{ config.extra.facebook_url }}"><img class="button" src="https://static.addtoany.com/buttons/facebook.svg"></a>
         {% endif %}
       </section>
       <nav id="nav-block">
@@ -75,8 +78,11 @@
 
   <footer class="footer-container">
     <section class="social-links">
-      {%- if config.extra.display_twitter_link and config.extra.twitter_account -%}
-        <a href="https://twitter.com/{{ config.extra.twitter_account }}"><img class="button" src="https://static.addtoany.com/buttons/twitter.svg"></a>
+      {%- if config.extra.display_twitter_link and config.extra.twitter_url -%}
+        <a href="{{ config.extra.twitter_url }}"><img class="button" src="https://static.addtoany.com/buttons/twitter.svg"></a>
+      {% endif %}
+      {%- if config.extra.display_facebook_link and config.extra.facebook_url -%}
+        <a href="{{ config.extra.facebook_url }}"><img class="button" src="https://static.addtoany.com/buttons/facebook.svg"></a>
       {% endif %}
     </section>
     <div class="copyright">
