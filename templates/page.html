@@ -42,7 +42,7 @@
     {% set section_title = page.components[1] %}
   {%- endif -%}
   <h1 class="title">
-    <a href="/">{{ config.title }}</a><span class="heading"> /{{ section_title | title }}</span>
+    <a href="/">{{ config.title }}</a><span class="section"> /{{ section_title | title }}</span>
   </h1>
 {% endblock page_heading %}
 
