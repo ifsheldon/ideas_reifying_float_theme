@@ -65,25 +65,25 @@
 
 {% macro paginator_block() %}
     <aside class="paginator">
-    {% if paginator.number_pagers <= 9 %}
+    {% if paginator.number_pagers <= 7 %}
         {% set start = 1 %}
         {% set end = paginator.number_pagers %}
     {% endif %}
-    {% if paginator.number_pagers > 9 %}
-        {% if paginator.current_index >= 5 %}
-        {% set start = paginator.current_index - 4 %}
-        {% if paginator.number_pagers - paginator.current_index < 4 %}
+    {% if paginator.number_pagers > 7 %}
+        {% if paginator.current_index >= 4 %}
+        {% set start = paginator.current_index - 3 %}
+        {% if paginator.number_pagers - paginator.current_index < 3 %}
             {% set difference = paginator.number_pagers - paginator.current_index %}
-            {% set compensation =  4 - difference %}
+            {% set compensation =  3 - difference %}
             {% set start = paginator.current_index - 4 - compensation %}
         {% endif %}
         {% else %}
         {% set start = 1 %}
         {% endif %}
-        {% if paginator.number_pagers >= paginator.current_index + 4 %}
-        {% set end = paginator.current_index + 4 %}
-        {% if paginator.current_index <= 5 %}
-            {% set end = 9 %}
+        {% if paginator.number_pagers >= paginator.current_index + 3 %}
+        {% set end = paginator.current_index + 3 %}
+        {% if paginator.current_index <= 4 %}
+            {% set end = 7 %}
         {% endif %}
         {% else %}
         {% set end = paginator.number_pagers %}
