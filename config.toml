@@ -39,8 +39,4 @@ build_search_index = false
 [extra]
 # Put all your custom variables here
 
-copyright = ""
-
-web_fonts = "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&display=swap'>"
-
 twitter_account = "@xxx"

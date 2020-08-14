@@ -91,6 +91,7 @@ hr {
 .body-block {
     margin: 0 auto 0 auto;
     color: hsla(0, 0%, 10%, 1.0);
+    font-family: 'Noto Serif TC', 'Noto Serif CJK TC', serif;
 
     @media (prefers-color-scheme: dark) {
         background-color: hsla(0, 0%, 40%, 1.0);
