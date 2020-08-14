@@ -1,66 +1,66 @@
 {% macro article_block(post) %}
-{% if post.extra.feature %}
-  {% if post.extra.feature %}
-    {% set feature_class = "-feature" %}
-    {% set image_width = "600px" %}
-  {% else %}
-    {% set feature_class = "" %}
-    {% set image_width = "300px" %}
-  {% endif %}
-{% else %}
-  {% set feature_class = "" %}
-  {% set image_width = "300px" %}
-{% endif %}
-<article class="article-block {{ feature_class }}">
-    {%- if post.extra.link %}
-        {% set link = post.extra.link %}
-    {% else %}
-        {% set link = post.permalink %}
-    {% endif %}
-    <a href="{{ link | safe }}"  class="link">
-        {% if post.extra.feature_image is matching("[.](jpg|jpeg|png|gif)$") %}
-            {%- if lang == config.default_language %}
-                {% set feature_image = post.components[0] ~ "/" ~ post.year ~ "/" ~ post.date ~ "-" ~ post.title ~ "/" ~ post.extra.feature_image %}
-            {% else %}
-                {% set feature_image = post.components[1] ~ "/" ~ post.year ~ "/" ~ post.date ~ "-" ~ post.title ~ "/" ~ post.extra.feature_image %}
-            {% endif %}
-            <img class="image" loading="lazy" alt="{{ post.title }}"
-            srcset="{{ resize_image(path=feature_image, width=300, height=300) | safe }} 300w,
-                    {{ resize_image(path=feature_image, width=600, height=600) | safe }} 600w,
-                    {{ resize_image(path=feature_image, width=900, height=900) | safe }} 900w,
-                    {{ resize_image(path=feature_image, width=1200, height=1200) | safe }} 1200w,
-                    {{ resize_image(path=feature_image, width=1500, height=1500) | safe }} 1500w,
-                    {{ resize_image(path=feature_image, width=1800, height=1800) | safe }} 1800w,
-                    {{ resize_image(path=feature_image, width=2100, height=2100) | safe }} 2100w,"
-            sizes="(max-width: 700px) 90vw, {{ image_width }}">
-        {% elif post.extra.feature_image is matching("[.](svg)$") %}
-            <img class="image" loading="lazy" alt="{{ post.title }}" src="{{ post.permalink | safe }}{{ post.extra.feature_image }}">
+    {% if post.extra.feature %}
+        {% if post.extra.feature %}
+            {% set feature_class = "-feature" %}
+            {% set image_width = "600px" %}
         {% else %}
-            <img class="image" loading="lazy" alt="{{ post.title }}"
-                srcset="https://source.unsplash.com/300x300/?{{ post.title | slugify }} 300w,
-                        https://source.unsplash.com/600x600/?{{ post.title | slugify }} 600w,
-                        https://source.unsplash.com/900x900/?{{ post.title | slugify }} 900w,
-                        https://source.unsplash.com/1200x1200/?{{ post.title | slugify }} 1200w,
-                        https://source.unsplash.com/1500x1500/?{{ post.title | slugify }} 1500w,
-                        https://source.unsplash.com/1800x1800/?{{ post.title | slugify }} 1800w,
-                        https://source.unsplash.com/2100x2100/?{{ post.title | slugify }} 2100w,"
-                sizes="(max-width: 700px) 90vw, {{ image_width }}">
+            {% set feature_class = "" %}
+            {% set image_width = "300px" %}
         {% endif %}
-        <section class="content">
-        <aside class="article-meta">
-            <time>{{ post.date }}</time>
-            <br>
-            <span>{% for tag in post.taxonomies.tags %}#{{ tag }} {% endfor %}</span>
-        </aside>
-        <h2 class="heading">
-            {{ post.title }}
-        </h2>
-        <p class="description">
-            {{ post.description }}
-        </p>
-        </section>
-    </a>
-</article>
+    {% else %}
+        {% set feature_class = "" %}
+        {% set image_width = "300px" %}
+    {% endif %}
+    <article class="article-block {{ feature_class }}">
+        {%- if post.extra.link %}
+            {% set link = post.extra.link %}
+        {% else %}
+            {% set link = post.permalink %}
+        {% endif %}
+        <a href="{{ link | safe }}"  class="link">
+            {% if post.extra.feature_image is matching("[.](jpg|jpeg|png|gif)$") %}
+                {%- if lang == config.default_language %}
+                    {% set feature_image = post.components[0] ~ "/" ~ post.year ~ "/" ~ post.date ~ "-" ~ post.title ~ "/" ~ post.extra.feature_image %}
+                {% else %}
+                    {% set feature_image = post.components[1] ~ "/" ~ post.year ~ "/" ~ post.date ~ "-" ~ post.title ~ "/" ~ post.extra.feature_image %}
+                {% endif %}
+                <img class="image" loading="lazy" alt="{{ post.title }}"
+                srcset="{{ resize_image(path=feature_image, width=300, height=300) | safe }} 300w,
+                        {{ resize_image(path=feature_image, width=600, height=600) | safe }} 600w,
+                        {{ resize_image(path=feature_image, width=900, height=900) | safe }} 900w,
+                        {{ resize_image(path=feature_image, width=1200, height=1200) | safe }} 1200w,
+                        {{ resize_image(path=feature_image, width=1500, height=1500) | safe }} 1500w,
+                        {{ resize_image(path=feature_image, width=1800, height=1800) | safe }} 1800w,
+                        {{ resize_image(path=feature_image, width=2100, height=2100) | safe }} 2100w,"
+                sizes="(max-width: 700px) 90vw, {{ image_width }}">
+            {% elif post.extra.feature_image is matching("[.](svg)$") %}
+                <img class="image" loading="lazy" alt="{{ post.title }}" src="{{ post.permalink | safe }}{{ post.extra.feature_image }}">
+            {% else %}
+                <img class="image" loading="lazy" alt="{{ post.title }}"
+                    srcset="https://source.unsplash.com/300x300/?{{ post.title | slugify }} 300w,
+                            https://source.unsplash.com/600x600/?{{ post.title | slugify }} 600w,
+                            https://source.unsplash.com/900x900/?{{ post.title | slugify }} 900w,
+                            https://source.unsplash.com/1200x1200/?{{ post.title | slugify }} 1200w,
+                            https://source.unsplash.com/1500x1500/?{{ post.title | slugify }} 1500w,
+                            https://source.unsplash.com/1800x1800/?{{ post.title | slugify }} 1800w,
+                            https://source.unsplash.com/2100x2100/?{{ post.title | slugify }} 2100w,"
+                    sizes="(max-width: 700px) 90vw, {{ image_width }}">
+            {% endif %}
+            <section class="content">
+            <aside class="article-meta">
+                <time>{{ post.date }}</time>
+                <br>
+                <span>{% for tag in post.taxonomies.tags %}#{{ tag }} {% endfor %}</span>
+            </aside>
+            <h2 class="heading">
+                {{ post.title }}
+            </h2>
+            <p class="description">
+                {{ post.description }}
+            </p>
+            </section>
+        </a>
+    </article>
 {% endmacro article_block %}
 
 {% macro paginator_block() %}
@@ -71,29 +71,29 @@
     {% endif %}
     {% if paginator.number_pagers > 7 %}
         {% if paginator.current_index >= 4 %}
-        {% set start = paginator.current_index - 3 %}
-        {% if paginator.number_pagers - paginator.current_index < 3 %}
-            {% set difference = paginator.number_pagers - paginator.current_index %}
-            {% set compensation =  3 - difference %}
-            {% set start = paginator.current_index - 4 - compensation %}
-        {% endif %}
+            {% set start = paginator.current_index - 3 %}
+            {% if paginator.number_pagers - paginator.current_index < 3 %}
+                {% set difference = paginator.number_pagers - paginator.current_index %}
+                {% set compensation =  3 - difference %}
+                {% set start = paginator.current_index - 4 - compensation %}
+            {% endif %}
         {% else %}
-        {% set start = 1 %}
+            {% set start = 1 %}
         {% endif %}
         {% if paginator.number_pagers >= paginator.current_index + 3 %}
-        {% set end = paginator.current_index + 3 %}
-        {% if paginator.current_index <= 4 %}
-            {% set end = 7 %}
-        {% endif %}
+            {% set end = paginator.current_index + 3 %}
+            {% if paginator.current_index <= 4 %}
+                {% set end = 7 %}
+            {% endif %}
         {% else %}
-        {% set end = paginator.number_pagers %}
+            {% set end = paginator.number_pagers %}
         {% endif %}
     {% endif %}
     {% for i in range(start=start, end=end+1) %}
         {% if i == paginator.current_index %}
-        <a class="link -highlight" href="{{ paginator.base_url }}{{ i }}"><span class="number">{{ i }}</span></a>
+            <a class="link -highlight" href="{{ paginator.base_url }}{{ i }}"><span class="number">{{ i }}</span></a>
         {% else %}
-        <a class="link" href="{{ paginator.base_url }}{{ i }}"><span class="number">{{ i }}</span></a>
+            <a class="link" href="{{ paginator.base_url }}{{ i }}"><span class="number">{{ i }}</span></a>
         {% endif %}
     {% endfor %}
     </aside>
