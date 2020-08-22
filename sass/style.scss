@@ -100,8 +100,8 @@ hr {
 
     > .content-block {
         width: 90vw;
-        // margin-left: auto;
-        // margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
         // margin-bottom: 1em;
         min-height: calc(100vh - 70px - 2em);
 
@@ -123,8 +123,7 @@ hr {
 
 .content-block {
     display: grid;
-    grid-template-columns: 300px auto;
-    gap: 3em;
+    grid-template-columns: 200px auto;
     grid-auto-flow: row dense;
     // padding-bottom: 1em;
 
@@ -166,7 +165,6 @@ hr {
 
 .content-aside {
     padding-top: 1em;
-    padding-left: 3em;
 
     @media (prefers-color-scheme: dark) {
         background-color: hsla(0, 0%, 20%, 1.0);
@@ -268,10 +266,11 @@ hr {
 
 .article-list {
     padding-top: 1em;
+    margin-top: 1em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: repeat(auto-fit, 400px);
     grid-auto-flow: row dense;
-    gap: 3em;
+    gap: 4em;
     margin-bottom: 1em;
     padding-bottom: 1em;
     justify-content: center;
@@ -288,14 +287,6 @@ hr {
     }
 
     > .article-block {
-        &.-feature {
-            grid-column-end: span 2;
-
-            @media screen and (max-width: 700px) {
-                grid-column-end: unset;
-            }
-        }
-
         @media screen and (max-width: 700px) {
             margin-left: auto;
             margin-right: auto;
@@ -341,11 +332,11 @@ hr {
     }
 
     > .link > .image {
-        width: 300px;
-        height: 200px;
+        width: 400px;
+        height: 300px;
         object-fit: cover;
         background-color: hsla(0, 0%, 90%, 1.0);
-        box-shadow: 0 10px 30px -10px hsla(0, 0%, 20%, 1.0);
+        box-shadow: 0 0 30px -10px hsla(0, 0%, 70%, 1.0);
         border-radius: 4px;
 
         @media (prefers-color-scheme: dark) {
@@ -360,7 +351,7 @@ hr {
     }
 
     > .link > .content {
-        width: 300px;
+        width: 400px;
         margin: 1em auto 0 auto;
 
         @media screen and (max-width: 700px) {
@@ -402,32 +393,6 @@ hr {
             @media screen and (max-width: 700px) {
                 margin-left: 5vw;
                 margin-right: 5vw;
-            }
-        }
-    }
-
-    &.-feature {
-        > .link > .image {
-            width: calc(600px + 3em);
-
-            @media screen and (max-width: 1100px) {
-                width: calc(600px + ((100vw - 600px) / 3));
-            }
-
-            @media screen and (max-width: 700px) {
-                width: 90vw;
-            }
-        }
-
-        > .link > .content {
-            width: calc(600px + 3em);
-
-            @media screen and (max-width: 1100px) {
-                width: calc(600px + ((100vw - 600px) / 3));
-            }
-
-            @media screen and (max-width: 700px) {
-                width: 90vw;
             }
         }
     }
