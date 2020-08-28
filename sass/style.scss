@@ -145,7 +145,7 @@ hr {
             top: 0;
         }
 
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 600px) {
             padding-left: 5vw;
             padding-right: 5vw;
         }
@@ -164,7 +164,7 @@ hr {
     .google-auto-placed {
         grid-column-start: 2;
 
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 600px) {
             grid-column-start: unset;
         }
     }
@@ -292,12 +292,12 @@ hr {
         padding-right: 1em;
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 600px) {
         grid-template-columns: auto;
     }
 
     > .article-block {
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 600px) {
             margin-left: auto;
             margin-right: auto;
         }
@@ -311,7 +311,7 @@ hr {
         grid-column-start: 1;
         grid-column-end: -1;
 
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 600px) {
             width: 90vw;
             margin-left: auto;
             margin-right: auto;
@@ -322,7 +322,7 @@ hr {
         grid-column-start: 1;
         grid-column-end: -1;
 
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 600px) {
             grid-column-start: unset;
             grid-column-end: unset;
         }
@@ -364,7 +364,7 @@ hr {
         //     height: 300px;
         // }
 
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 600px) {
             width: 90vw;
             height: 60vw;
         }
@@ -382,7 +382,7 @@ hr {
         //     width: 400px;
         // }
 
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 600px) {
             width: 90vw;
             margin: 1em auto 0 auto;
         }
@@ -391,7 +391,7 @@ hr {
             margin-left: 1rem;
             margin-right: 1rem;
 
-            @media screen and (max-width: 700px) {
+            @media screen and (max-width: 600px) {
                 margin-left: 5vw;
                 margin-right: 5vw;
             }
@@ -403,7 +403,7 @@ hr {
             margin-right: 1rem;
             font-size: medium;
 
-            @media screen and (max-width: 700px) {
+            @media screen and (max-width: 600px) {
                 margin-left: 5vw;
                 margin-right: 5vw;
             }
@@ -418,7 +418,7 @@ hr {
                 color: unset;
             }
 
-            @media screen and (max-width: 700px) {
+            @media screen and (max-width: 600px) {
                 margin-left: 5vw;
                 margin-right: 5vw;
             }
