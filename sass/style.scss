@@ -305,6 +305,8 @@ hr {
 
     @media screen and (max-width: 500px) {
         grid-template-columns: auto;
+        padding-left: unset;
+        padding-right: unset;
     }
 
     > .article-block {
