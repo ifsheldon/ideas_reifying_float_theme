@@ -27,7 +27,7 @@ generate_feed = false
 #     ]
 #
 taxonomies = [
-    {name = "tags", paginate_by = 10},
+    {name = "tags", paginate_by = 11},
 ]
 
 # Whether to automatically compile all Sass files in the sass directory

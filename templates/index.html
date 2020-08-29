@@ -26,10 +26,10 @@
       {% set path = main_section ~ "/_index." ~ lang ~ ".md" %}
       {% set section = get_section(path=path) %}
     {% endif %}
-    {% for post in section.pages | slice(end=10) %}
+    {% for post in section.pages | slice(end=5) %}
       {{ macros::article_block(post=post) }}
     {% endfor %}
-    {% if section.pages | length > 10 %}
+    {% if section.pages | length > 5 %}
       <article class="article-block read-more">
         <a href="{{ section.permalink | safe }}page/2"  class="link">
           <img class="image" loading="lazy" alt="MORE"
