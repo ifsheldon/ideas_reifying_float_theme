@@ -317,7 +317,11 @@ hr {
     }
 
     > .read-more {
-        // grid-row-start: -1;
+        grid-column-start: 1;
+        grid-column-end: -1;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     > .paginator {
@@ -440,8 +444,18 @@ hr {
 }
 
 .read-more {
-    > .link > .content > .heading {
+    padding: 1em;
+    box-shadow: 0 0 30px -10px hsla(0, 0%, 70%, 1.0);
+    
+    > .link {
+        color: hsla(0, 0%, 10%, 1.0);
+
+        > .heading {    
+            text-align: center;
+        }
     }
+
+    
 }
 
 .paginator {

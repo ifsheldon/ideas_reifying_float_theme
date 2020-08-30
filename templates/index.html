@@ -26,28 +26,14 @@
       {% set path = main_section ~ "/_index." ~ lang ~ ".md" %}
       {% set section = get_section(path=path) %}
     {% endif %}
-    {% for post in section.pages | slice(end=5) %}
+    {% for post in section.pages | slice(end=6) %}
       {{ macros::article_block(post=post) }}
     {% endfor %}
-    {% if section.pages | length > 5 %}
+    {% if section.pages | length > 6 %}
       <article class="article-block read-more">
         <a href="{{ section.permalink | safe }}page/2"  class="link">
-          <img class="image" loading="lazy" alt="MORE"
-          srcset="{{ resize_image(path='../static/images/more.png', width=300, height=300) | safe }} 300w,
-                  {{ resize_image(path='../static/images/more.png', width=600, height=600) | safe }} 600w,
-                  {{ resize_image(path='../static/images/more.png', width=900, height=900) | safe }} 900w,
-                  {{ resize_image(path='../static/images/more.png', width=1200, height=1200) | safe }} 1200w,
-                  {{ resize_image(path='../static/images/more.png', width=1500, height=1500) | safe }} 1500w,
-                  {{ resize_image(path='../static/images/more.png', width=1800, height=1800) | safe }} 1800w,
-                  {{ resize_image(path='../static/images/more.png', width=2100, height=2100) | safe }} 2100w,"
-          sizes="(max-width: 700px) 90vw, 300px">
-          <section class="content">
-            <aside class="article-meta">
-              <br>
-              <br>
-            </aside>
-            <h2 class="heading">
-              MORE >
+            <h3 class="heading">
+              MORE
             </h2>
           </section>
         </a>
