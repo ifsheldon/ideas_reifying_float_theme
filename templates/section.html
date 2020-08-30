@@ -25,9 +25,27 @@
 
 {% block content %}
   <main class="article-list">
+    <article class="article-block title-block">
+      <h2 class="heading">
+        {{ section.title }}
+      </h2>
+      <aside class="page">
+        Page {{ paginator.current_index }} / {{ paginator.number_pagers }}
+      </aside>
+    </article>
     {% for post in paginator.pages %}
       {{ macros::article_block(post=post) }}
     {% endfor %}
+
+    <article class="article-block read-more">
+        <a href="{{ paginator.next }}"  class="link">
+            <h4 class="heading">
+              Next
+            </h4>
+          </section>
+        </a>
+    </article>
+
     {{ macros::paginator_block() }}
   </main>
 {% endblock content %}

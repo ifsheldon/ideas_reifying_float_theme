@@ -316,10 +316,16 @@ hr {
         }
     }
 
+    > .title-block {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
     > .read-more {
         grid-column-start: 1;
         grid-column-end: -1;
         width: 50%;
+        min-width: 6em;
         margin-left: auto;
         margin-right: auto;
     }
@@ -443,19 +449,42 @@ hr {
     }
 }
 
+.title-block {
+    padding: 0;
+
+    > .heading {
+        font-weight: normal;
+
+        @media screen and (max-width: 900px) {
+            text-align: center;
+        }
+    }
+
+    > .page {
+        font-weight: lighter;
+
+        @media screen and (max-width: 900px) {
+            text-align: center;
+        }
+    }
+}
+
 .read-more {
-    padding: 1em;
+    padding: 0;
     box-shadow: 0 0 30px -10px hsla(0, 0%, 70%, 1.0);
     
     > .link {
-        color: hsla(0, 0%, 10%, 1.0);
+        padding: 1em;
+        color: hsla(0, 0%, 20%, 1.0);
 
         > .heading {    
             text-align: center;
         }
     }
 
-    
+    > .link:hover {
+        color: hsla(0, 0%, 40%, 1.0);
+    }
 }
 
 .paginator {
