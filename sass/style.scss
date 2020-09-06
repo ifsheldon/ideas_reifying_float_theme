@@ -150,11 +150,6 @@ hr {
             position: sticky;
             top: 0;
         }
-
-        @media screen and (max-width: 500px) {
-            padding-left: 5vw;
-            padding-right: 5vw;
-        }
     }
 
     > .article-list {
@@ -205,6 +200,11 @@ hr {
     @media screen and (max-width: 700px) {
         padding-left: calc((100vw - 400px)/3);
         padding-right: calc((100vw - 400px)/3);
+    }
+
+    @media screen and (max-width: 500px) {
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 
     > .title {
@@ -547,9 +547,10 @@ hr {
         font-size: small;
 
         @media screen and (max-width: 900px) {
-            width: 90vw;
             margin-left: auto;
             margin-right: auto;
+            padding-left: calc((100vw - 600px)/3);
+            padding-right: calc((100vw - 600px)/3);
         }
     }
 
@@ -582,7 +583,8 @@ hr {
         padding: 0 0 1em 0;
 
         @media screen and (max-width: 900px) {
-            width: 90vw;
+            padding-left: calc((100vw - 600px)/3);
+            padding-right: calc((100vw - 600px)/3);
             margin-left: auto;
             margin-right: auto;
         }
