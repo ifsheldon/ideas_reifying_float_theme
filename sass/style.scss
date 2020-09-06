@@ -100,15 +100,21 @@ hr {
 
     > .content-block {
         width: 1200px;
-        padding-left: 1em;
-        padding-right: 1em;
         margin-left: auto;
         margin-right: auto;
         // margin-bottom: 1em;
         min-height: calc(100vh - 70px - 2em);
 
         @media screen and (max-width: 1200px) {
-            width: unset;
+            width: 1100px;
+        }
+
+        @media screen and (max-width: 1100px) {
+            width: 1000px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            width: 900px;
         }
 
         @media screen and (max-width: 900px) {
@@ -715,11 +721,23 @@ hr {
     > pre {
         padding: 1em;
         overflow-x: auto;
-        width: calc(90vw - 300px - 1em);
+        width: 1000px;
         font-size: small;
-        box-shadow: 0 10px 30px -10px hsla(221, 16%, 20%, 1.0);
+        box-shadow: 0 0 30px -10px hsla(0, 0%, 70%, 1.0);
         border-radius: 4px;
         margin-bottom: 1em;
+        
+        @media screen and (max-width: 1200px) {
+            width: 900px;
+        }
+
+        @media screen and (max-width: 1100px) {
+            width: 800px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            width: 700px;
+        }
 
         @media screen and (max-width: 900px) {
             width: 100vw;
@@ -733,7 +751,7 @@ hr {
     }
 
     img {
-        width: calc(90vw - 300px - 1em);
+        width: 100%;
         border-radius: 4px;
 
         @media screen and (max-width: 900px) {
