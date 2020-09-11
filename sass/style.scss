@@ -297,18 +297,18 @@ hr {
     padding-bottom: 1em;
     justify-content: space-evenly;
     align-content: start;
-    gap: 1em;
+    // gap: 1em;
 
     @media screen and (max-width: 1200px) {
         grid-template-columns: repeat(auto-fit, 300px);
     }
 
     @media screen and (max-width: 1000px) {
-        grid-template-columns: repeat(auto-fit, 200px);
+        grid-template-columns: repeat(2, 200px);
     }
 
     @media screen and (max-width: 900px) {
-        grid-template-columns: repeat(auto-fit, 300px);
+        grid-template-columns: repeat(2, 300px);
     }
 
     @media screen and (max-width: 700px) {
@@ -408,7 +408,7 @@ hr {
 
         @media screen and (max-width: 700px) {
             width: 200px;
-            height: 200px;
+            height: 150px;
         }
 
         @media screen and (max-width: 500px) {
@@ -578,6 +578,11 @@ hr {
             padding-left: calc((100vw - 600px)/3);
             padding-right: calc((100vw - 600px)/3);
         }
+
+        @media screen and (max-width: 700px) {
+            padding-left: calc((100vw - 400px)/3);
+            padding-right: calc((100vw - 400px)/3);
+        }
     }
 
     > .article-action-block {
@@ -614,6 +619,11 @@ hr {
             margin-left: auto;
             margin-right: auto;
         }
+
+        @media screen and (max-width: 700px) {
+            padding-left: calc((100vw - 400px)/3);
+            padding-right: calc((100vw - 400px)/3);
+        }
     }
 
     > .description {
@@ -630,6 +640,11 @@ hr {
             margin-left: calc(((100vw - 600px)/3) - 1em - 2px);
             margin-right: calc((100vw - 600px)/3);
         }
+
+        @media screen and (max-width: 700px) {
+            margin-left: calc(((100vw - 400px)/3) - 1em - 2px);
+            margin-right: calc((100vw - 400px)/3);
+        }
     }
 
     > h2 {
@@ -640,6 +655,11 @@ hr {
             padding-right: calc((100vw - 600px)/3);
             margin-left: auto;
             margin-right: auto;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding-left: calc((100vw - 400px)/3);
+            padding-right: calc((100vw - 400px)/3);
         }
     }
 
@@ -652,6 +672,11 @@ hr {
             margin-left: auto;
             margin-right: auto;
         }
+
+        @media screen and (max-width: 700px) {
+            padding-left: calc((100vw - 400px)/3);
+            padding-right: calc((100vw - 400px)/3);
+        }
     }
 
     > p {
@@ -663,6 +688,11 @@ hr {
             padding-right: calc((100vw - 600px)/3);
             margin-left: auto;
             margin-right: auto;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding-left: calc((100vw - 400px)/3);
+            padding-right: calc((100vw - 400px)/3);
         }
 
         > code {
@@ -700,6 +730,11 @@ hr {
             margin-right: auto;
         }
 
+        @media screen and (max-width: 700px) {
+            padding-left: calc((100vw - 400px)/3);
+            padding-right: calc((100vw - 400px)/3);
+        }
+
         > dd {
             > code {
                 background-color: hsla(0, 0%, 90%, 1.0);
@@ -715,6 +750,11 @@ hr {
             padding-right: calc((100vw - 600px)/3);
             margin-left: auto;
             margin-right: auto;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding-left: calc(((100vw - 600px)/3) + 2em);
+            padding-right: calc((100vw - 400px)/3);
         }
 
         > li {
@@ -739,6 +779,11 @@ hr {
             padding-right: calc((100vw - 600px)/3);
             margin-left: auto;
             margin-right: auto;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding-left: calc(((100vw - 600px)/3) + 2em);
+            padding-right: calc((100vw - 400px)/3);
         }
 
         > li {
@@ -789,6 +834,11 @@ hr {
         }
 
         @media screen and (max-width: 700px) {
+            padding-left: calc((100vw - 400px)/3);
+            padding-right: calc((100vw - 400px)/3);
+        }
+
+        @media screen and (max-width: 600px) {
             width: 100vw;
             padding: 5vw;
             border-radius: 0px;
