@@ -517,20 +517,17 @@ hr {
 }
 
 .paginator {
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 32px);
+    gap: 1vw;
+    place-content: center;
 
     > .link {
         text-align: center;
-        display: inline-block;
         background-color: hsla(0, 0%, 90%, 1.0);
         border-radius: 4px;
         font-variant: tabular-nums;
         height: 32px;
-        min-width: 32px;
-        padding-left: 0.2em;
-        padding-right: 0.2em;
-        margin-top: 0.2em;
-        margin-bottom: 0.2em;
 
         @media (prefers-color-scheme: dark) {
             background-color: hsla(0, 0%, 30%, 1.0);
@@ -669,10 +666,9 @@ hr {
 
         @media screen and (max-width: 500px) {
             width: 90vw;
-            padding-left: 5vw;
-            padding-right: 5vw;
-            display: none;
-
+            padding-right: unset;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
@@ -811,7 +807,7 @@ hr {
         }
 
         @media screen and (max-width: 500px) {
-            width: 80vw;
+            width: 60vw;
             padding-left: unset;
             padding-right: unset;
         }
@@ -846,7 +842,7 @@ hr {
         }
 
         @media screen and (max-width: 500px) {
-            width: 80vw;
+            width: 60vw;
             padding-left: unset;
             padding-right: unset;
         }
@@ -1009,7 +1005,7 @@ hr {
 .addtoany-block {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 1em;
+    gap: 1vw;
 
     > a > .button {
         border-radius: 4px;
