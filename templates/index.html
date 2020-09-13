@@ -19,6 +19,10 @@
 
 {% block content %}
   <main class="article-list">
+    <div class="ad">
+      {% block ad1 %}
+      {% endblock ad1 %}
+    </div>
     {% set main_section = config.extra.main_section %}
     {%- if lang == config.default_language %}
       {% set section = get_section(path=main_section ~ "/_index.md") %}
