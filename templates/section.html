@@ -41,6 +41,11 @@
       {{ macros::article_block(post=post) }}
     {% endfor %}
 
+    <div class="ad">
+      {% block ad2 %}
+      {% endblock ad2 %}
+    </div>
+
     <article class="article-block read-more">
         <a href="{{ paginator.next }}"  class="link">
             <h4 class="heading">

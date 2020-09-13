@@ -33,6 +33,10 @@
     {% for post in section.pages | slice(end=6) %}
       {{ macros::article_block(post=post) }}
     {% endfor %}
+    <div class="ad">
+      {% block ad2 %}
+      {% endblock ad2 %}
+    </div>
     {% if section.pages | length > 6 %}
       <article class="article-block read-more">
         <a href="{{ section.permalink | safe }}page/2"  class="link">
