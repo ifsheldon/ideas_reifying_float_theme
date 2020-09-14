@@ -689,11 +689,22 @@ hr {
 
     > blockquote {
         border-left: 2px solid hsla(0, 0%, 10%, 1.0);
-        margin-left: 1em;
         padding-left: 1em;
+        line-height: 2em;
+        margin-bottom: 1em;
 
         @media screen and (max-width: 900px) {
-            width: 90vw;
+            margin-left: calc((100vw - 600px)/3 + 1em);
+            margin-right: calc((100vw - 600px)/3 + 1em);
+        }
+
+        @media screen and (max-width: 700px) {
+            margin-left: calc((100vw - 400px)/3 + 1em);
+            margin-right: calc((100vw - 400px)/3 + 1em);
+        }
+
+        @media screen and (max-width: 500px) {
+            width: 60vw;
             margin-left: auto;
             margin-right: auto;
         }
