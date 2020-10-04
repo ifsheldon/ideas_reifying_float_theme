@@ -320,6 +320,10 @@ hr {
     > .paginator {
         grid-column-start: 1;
         grid-column-end: -1;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
 
         @media screen and (max-width: 500px) {
             width: 90vw;
@@ -468,12 +472,12 @@ hr {
 .read-more {
     padding: 0;
     box-shadow: 0 0 30px -10px hsla(0, 0%, 70%, 1.0);
-    
+
     > .link {
         padding: 1em;
         color: hsla(0, 0%, 20%, 1.0);
 
-        > .heading {    
+        > .heading {
             text-align: center;
         }
     }
@@ -812,7 +816,7 @@ hr {
         box-shadow: 0 0 30px -10px hsla(0, 0%, 70%, 1.0);
         border-radius: 4px;
         margin-bottom: 1em;
-        
+
         @media screen and (max-width: 1300px) {
             width: 900px;
         }
