@@ -135,6 +135,8 @@ hr {
     }
 
     > .content-aside {
+        z-index: 1;
+
         @media screen and (max-width: 900px) {
             position: sticky;
             top: 0;
