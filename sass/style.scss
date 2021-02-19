@@ -697,6 +697,25 @@ hr {
         }
     }
 
+    > figure {
+        margin-bottom: 1rem;
+
+        > figcaption {
+            text-align: center;
+            font-size: smaller;
+            color: hsla(0, 0%, 40%, 1.0);
+
+            > a {
+                color: hsla(0, 0%, 40%, 1.0);
+                text-decoration: none;
+
+                &:hover {
+                    color: hsla(0, 0%, 20%, 1.0);
+                }
+            }
+        }  
+    }
+
     > blockquote {
         border-left: 2px solid hsla(0, 0%, 10%, 1.0);
         padding-left: 1em;
