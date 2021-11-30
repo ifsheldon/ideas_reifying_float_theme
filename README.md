@@ -26,7 +26,7 @@ Float 是一款為 [Zola](https://www.getzola.org/) 設計的佈景主題。
 
 把 Float 以 Git 子模組的方式加入專案內：
 ```shell
-git submodule add https://gitlab.com/float-theme/float.git theme/float
+git submodule add https://gitlab.com/float-theme/float.git themes/float
 ```
 
 編輯您的 config.toml，指定 Float 作為佈景主題：
