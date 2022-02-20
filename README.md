@@ -65,7 +65,7 @@ cp -r themes/float/content/* content/
 content/
 └── blog/
     └── 2020/
-        └── 2020-06-21-Float theme for Zola/
+        └── 2020-06-15-Zola-Theme-Float/
             ├── index.md
             ├── pic1.png
             ├── pic2.png
