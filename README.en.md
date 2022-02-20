@@ -25,19 +25,20 @@ Float, a theme for [Zola](https://www.getzola.org/).
 In your Zola folder:
 
 Add Float as a Git submodule:
-```shell
+
+```sh
 git submodule add https://gitlab.com/float-theme/float.git themes/float
 ```
 
 Edit your config.toml. Assign `float` to `theme`:
 
-```TOML
+```toml
 theme = "float"
 ```
 
 Edit your config.toml. Add `tags` as a taxonomy:
 
-```TOML
+```toml
 taxonomies = [
     {name = "tags", paginate_by = 10},
 ]
@@ -45,13 +46,13 @@ taxonomies = [
 
 Copy float/content/ all sub folders and files to your conten/:
 
-```shell
+```sh
 cp -r themes/float/static/* static/
 ```
 
 Copy float/content/ all sub folders and files to your conten/:
 
-```shell
+```sh
 cp -r themes/float/content/* content/
 ```
 
@@ -79,7 +80,7 @@ Article content and front-matter are in index.md. Images are in the same folder.
 
 Some additional data are added into `[extra]` section of front-matter:
 
-```TOML
+```toml
 title = "Float theme for Zola"
 description = "Float features and usage guide"
 draft = false
@@ -95,7 +96,7 @@ link = "" # Assign another link to the card to insteak linking to the post page
 
 Add below variables to your `[extra]` of config.toml to customize your blog:
 
-```TOML
+```toml
 [extra]
 main_section = "blog"
 
