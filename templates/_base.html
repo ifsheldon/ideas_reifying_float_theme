@@ -3,12 +3,16 @@
 <!doctype html>
 <html lang="{{ lang }}">
     <head>
-{#        start of vercel analytics#}
+{#        start of vercel analytics and speed insight#}
         <script>
           window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
         </script>
         <script defer src="/_vercel/insights/script.js"></script>
-{#    end of vercel analytics#}
+        <script>
+          window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+        </script>
+        <script defer src="/_vercel/speed-insights/script.js"></script>
+{#    end of vercel analytics and speed insight#}
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{% block title %}{{ config.title }}{% endblock title %}</title>
