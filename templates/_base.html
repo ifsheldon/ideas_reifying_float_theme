@@ -38,14 +38,6 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&display=swap"
         />
-
-        {% if config.extra.google_adsense and config.extra.google_adsense_id %}
-        <script
-            data-ad-client="{{ config.extra.google_adsense_id }}"
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        ></script>
-        {% endif %} {% block head %} {% endblock head %}
     </head>
 
     <body class="body-block">
