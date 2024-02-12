@@ -81,13 +81,13 @@
                         </li>
                         {% endfor %}
                     </ul>
-                </nav>
-                <hr />
-                {% if lang == config.default_language %}
-                <a href="/en">> English</a>
-                {% else %}
-                <a href="/">> 中文</a>
+                    <hr />
+                    {% if lang == config.default_language %}
+                    <a href="/en">> English</a>
+                    {% else %}
+                    <a href="/">> 中文</a>
                 {% endif %}
+                </nav>
             </aside>
             {% block content %}{% endblock content %}
         </main>
