@@ -19,7 +19,7 @@
     config.default_language %} {% set section = get_section(path=main_section ~
     "/_index.md") %} {%- else %} {% set path = main_section ~ "/_index." ~ lang
     ~ ".md" %} {% set section = get_section(path=path) %} {% endif %} {% for
-    post in section.pages | slice(end=6) | reverse%} {{
+    post in section.pages | reverse | slice(end=6) %} {{
     macros::article_block(post=post) }} {% endfor %}
     <div class="ad">{% block ad2 %} {% endblock ad2 %}</div>
     {% if section.pages | length > 6 %}
