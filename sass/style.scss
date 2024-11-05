@@ -576,7 +576,8 @@ hr {
 
 .article-content {
     li > ul > li > code,    // Added for nested unordered lists in ordered lists
-    li > ol > li > code {   // Added for nested ordered lists in ordered lists
+    li > ol > li > code,
+    blockquote > p > code {   // Added for nested ordered lists in ordered lists
         background-color: hsla(0, 0%, 90%, 1.0);
         padding: 0.2em;
         border-radius: 4px;
