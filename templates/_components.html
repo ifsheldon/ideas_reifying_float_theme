@@ -1,4 +1,4 @@
-{% macro article_block(post) %}
+{% component article_block(post) %}
     <article class="article-block">
         {%- if post.extra.link %}
             {% set link = post.extra.link %}
@@ -6,7 +6,7 @@
             {% set link = post.permalink %}
         {% endif %}
         <a href="{{ link | safe }}"  class="link">
-            {% if post.extra.feature_image is matching("[.](jpg|jpeg|png|gif)$") %}
+            {% if post.extra.feature_image and post.extra.feature_image is matching(pat="[.](jpg|jpeg|png|gif)$") %}
                 {% set post_relative_path_array = post.relative_path | split(pat="/")  %}
 {#                {%- if lang == config.default_language %}#}
                     {% set feature_image = post_relative_path_array[0] ~ "/" ~ post_relative_path_array[1] ~ "/" ~ post.extra.feature_image %}
@@ -17,7 +17,7 @@
                     {% set feature_image_1500 = resize_image(path=feature_image, width=1500, height=750, format="webp") %}
                     {% set feature_image_1800 = resize_image(path=feature_image, width=1800, height=900, format="webp") %}
                     {% set feature_image_2100 = resize_image(path=feature_image, width=2100, height=1050, format="webp") %}
-                
+
 {#                {% else %}#}
 {#                    {% set feature_image = post.components[1] ~ "/" ~ post.year ~ "/" ~ post.date ~ "-" ~ post.title ~ "/" ~ post.extra.feature_image %}#}
 {#                {% endif %}#}
@@ -35,7 +35,7 @@
                         (max-width: 1000px) 200px,
                         (max-width: 1200px) 300px,
                         400px">
-            {% elif post.extra.feature_image is matching("[.](svg)$") %}
+            {% elif post.extra.feature_image and post.extra.feature_image is matching(pat="[.](svg)$") %}
                 <img class="image" loading="lazy" alt="{{ post.title }}" src="{{ post.permalink | safe }}{{ post.extra.feature_image }}">
             {% else %}
                 <img class="image" loading="lazy" alt="{{ post.title }}"
@@ -68,9 +68,9 @@
             </section>
         </a>
     </article>
-{% endmacro article_block %}
+{% endcomponent article_block %}
 
-{% macro paginator_block() %}
+{% component paginator_block(paginator) %}
     <aside class="paginator">
     {% if paginator.number_pagers <= 5 %}
         {% set start = 1 %}
@@ -104,4 +104,4 @@
         {% endif %}
     {% endfor %}
     </aside>
-{% endmacro paginator_block %}
+{% endcomponent paginator_block %}

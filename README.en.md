@@ -1,6 +1,6 @@
 ![Float](content/blog/2020/2020-06-15-Zola-Theme-Float/Float.png)
 
-**[Taiwanese](README.md)**
+**[Traditional Chinese](README.md)**
 
 Float, a theme for [Zola](https://www.getzola.org/).
 
@@ -22,12 +22,14 @@ Float, a theme for [Zola](https://www.getzola.org/).
 
 ## Installation
 
+Use Zola 0.23.6 or newer; this theme is tested with 0.23.6.
+
 In your Zola folder:
 
 Add Float as a Git submodule:
 
 ```sh
-git submodule add https://gitlab.com/float-theme/float.git themes/float
+git submodule add https://github.com/ifsheldon/ideas_reifying_float_theme.git themes/float
 ```
 
 Edit your config.toml. Assign `float` to `theme`:
@@ -58,6 +60,20 @@ cp -r themes/float/content/* content/
 
 
 ## Using
+
+### Build and preview
+
+From the root of the Zola site using this theme, build the site:
+
+```sh
+zola build
+```
+
+To preview the site locally with automatic rebuilding:
+
+```sh
+zola serve
+```
 
 ### Article and images
 
@@ -93,6 +109,20 @@ link = "" # Assign another link to the card to insteak linking to the post page
 ```
 
 ## Customization
+
+### Template customization
+
+This theme uses Tera 2 components, defined in `templates/_components.html`.
+When overriding templates, use component call syntax and pass the paginator explicitly:
+
+```jinja
+{{ <article_block post={post} /> }}
+{{ <paginator_block paginator={paginator} /> }}
+```
+
+The component definitions use `{% component article_block(post) %}` and `{% component paginator_block(paginator) %}`.
+
+### Site configuration
 
 Add below variables to your `[extra]` of config.toml to customize your blog:
 

@@ -13,7 +13,7 @@ description = page.content %} {% endif %}
 <meta property="og:title" content="{{ page.title }} | {{ config.title }}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ page.permalink | safe }}" />
-{% if page.extra.feature_image is matching("[.](jpg|png)$") %}
+{% if page.extra.feature_image and page.extra.feature_image is matching(pat="[.](jpg|png)$") %}
 <meta
     property="og:image"
     content="{{ page.permalink | safe }}{{ page.extra.feature_image }}"

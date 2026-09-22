@@ -15,12 +15,11 @@
 {% endblock head %} {% block content %}
 <main class="article-list">
     <div class="ad">{% block ad1 %} {% endblock ad1 %}</div>
-    {% set main_section = config.extra.main_section %} {%- if lang ==
-    config.default_language %} {% set section = get_section(path=main_section ~
-    "/_index.md") %} {%- else %} {% set path = main_section ~ "/_index." ~ lang
-    ~ ".md" %} {% set section = get_section(path=path) %} {% endif %} {% for
-    post in section.pages | reverse | slice(end=6) %} {{
-    macros::article_block(post=post) }} {% endfor %}
+    {% set main_section = config.extra.main_section %}
+    {% set section = get_section(path=main_section ~ "/_index.md", lang=lang) %}
+    {% for post in section.pages[::-1][:6] %}
+        {{ <article_block post={post} /> }}
+    {% endfor %}
     <div class="ad">{% block ad2 %} {% endblock ad2 %}</div>
     {% if section.pages | length > 6 %}
     <article class="article-block read-more">

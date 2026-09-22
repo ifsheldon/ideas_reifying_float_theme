@@ -38,7 +38,7 @@
       </aside>
     </article>
     {% for post in paginator.pages %}
-      {{ macros::article_block(post=post) }}
+      {{ <article_block post={post} /> }}
     {% endfor %}
 
     <div class="ad">
@@ -54,6 +54,6 @@
         </a>
     </article>
 
-    {{ macros::paginator_block() }}
+    {{ <paginator_block paginator={paginator} /> }}
   </main>
 {% endblock content %}
